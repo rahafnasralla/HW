@@ -54,4 +54,3 @@ class Hi extends Component {
 }
 export default Hi;
 
-//change to a table 
