@@ -1,13 +1,11 @@
-
 import './App.css';
-import Hi from './Hi';
-
-
+import HW from './HW';
 
 function App() {
   return (
     <div className="App">
-    <Hi/>
+     {/* <Names array={[{name: 'Ahmad', age: 30},{name: 'Yousef', age: 12},{name: 'Shatha', age: 14},{name: 'Rana', age: 22},{name: 'Osama', age: 22},{name: 'Ahmad', age: 38}]}/> */}
+    <HW/>
     </div>
   );
 }
