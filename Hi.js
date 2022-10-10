@@ -1,23 +1,23 @@
-//484-523
-//import logo from './logo.svg';
 import './App.css';
 import {Component} from 'react';
 
 class Hi extends Component {
   constructor(props){
     super(props);
+    this.array = [{name: 'Ahmad', age: 30},
+    {name: 'Yousef', age: 12},
+    {name: 'Shatha', age: 14},
+    {name: 'Rana', age: 22},
+    {name: 'Osama', age: 22},
+    {name: 'Ahmad', age: 38} ]
     this.state = {
-      array :[{name: 'Ahmad', age: 30},
-              {name: 'Yousef', age: 12},
-              {name: 'Shatha', age: 14},
-              {name: 'Rana', age: 22},
-              {name: 'Osama', age: 22},
-              {name: 'Ahmad', age: 38} ],
-      newArray:  this.state.array.filter((value, index, self) =>
-                 index === self.findIndex((t) => (
-                 t.age === value.age && t.name === value.name
-    ))
+       newArray : this.array.filter((value, index, self) =>
+       index === self.findIndex((t) => (
+       t.age === value.age || t.name === value.name
+))
 )
+    
+
     }
     
 
@@ -53,4 +53,3 @@ class Hi extends Component {
   }
 }
 export default Hi;
-
